@@ -1,0 +1,23 @@
+type Mutation {
+  saveSong(title: String!, artist: String!): Int
+}
+
+type Query {
+  extend: Int!
+  getSongs: [Song!]!
+  _service: _Service!
+}
+
+type Song {
+  title: String!
+  artist: String!
+  active: Boolean!
+  mediaUrl: String!
+  imageUrl: String!
+  createdOn: Int!
+  lastModified: Int!
+}
+
+type _Service {
+  sdl: String
+}

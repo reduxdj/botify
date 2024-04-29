@@ -1,0 +1,43 @@
+{
+  "schemaNamespace": "BotifyApi",
+  "input": {
+    "operationSearchPaths": [
+      "./graphql/*query.graphql"
+    ],
+    "schemaSearchPaths": [
+      "./graphql/schema.graphql"
+    ]
+  },
+  "schemaDownloadConfiguration": {
+    "downloadMethod": {
+      "introspection": {
+        "endpointURL": "http://localhost:8081/graphql",
+        "httpMethod": {
+          "POST": {}
+        },
+        "includeDeprecatedInputValues": true,
+        "outputFormat": "SDL"
+      }
+    },
+    "downloadTimeout": 60,
+    "headers":  [{
+        "name": "Content-Type",
+        "value": "application/json"
+      }],
+    "outputPath": "./graphql/schema.graphql"
+  },
+  "output": {
+    "testMocks": {
+      "none": {}
+    },
+    "schemaTypes": {
+      "path": "./BotifyApi",
+      "moduleType": {
+        "swiftPackageManager": {}
+      }
+    },
+    "operations": {
+      "inSchemaModule": {}
+    }
+  }
+}

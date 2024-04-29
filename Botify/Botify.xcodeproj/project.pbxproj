@@ -1,0 +1,713 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		548893452BDF4EDF00626FEF /* BotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893442BDF4EDF00626FEF /* BotifyApp.swift */; };
+		548893472BDF4EDF00626FEF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893462BDF4EDF00626FEF /* ContentView.swift */; };
+		548893492BDF4EE200626FEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 548893482BDF4EE200626FEF /* Assets.xcassets */; };
+		5488934D2BDF4EE200626FEF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5488934C2BDF4EE200626FEF /* Preview Assets.xcassets */; };
+		548893572BDF4EE300626FEF /* BotifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893562BDF4EE300626FEF /* BotifyTests.swift */; };
+		548893612BDF4EE300626FEF /* BotifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893602BDF4EE300626FEF /* BotifyUITests.swift */; };
+		548893632BDF4EE300626FEF /* BotifyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893622BDF4EE300626FEF /* BotifyUITestsLaunchTests.swift */; };
+		548893722BDF4F0E00626FEF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 548893712BDF4F0E00626FEF /* Kingfisher */; };
+		548893752BDF575900626FEF /* BotifyApi in Frameworks */ = {isa = PBXBuildFile; productRef = 548893742BDF575900626FEF /* BotifyApi */; };
+		548893772BDF579E00626FEF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548893762BDF579E00626FEF /* Network.swift */; };
+		548893842BDF58D200626FEF /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 548893832BDF58D200626FEF /* Apollo */; };
+		548893862BDF58D200626FEF /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 548893852BDF58D200626FEF /* ApolloAPI */; };
+		548893882BDF58D200626FEF /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 548893872BDF58D200626FEF /* ApolloSQLite */; };
+		5488938A2BDF58D200626FEF /* ApolloTestSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 548893892BDF58D200626FEF /* ApolloTestSupport */; };
+		5488938C2BDF594200626FEF /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5488938B2BDF594200626FEF /* SongViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		548893532BDF4EE200626FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 548893392BDF4EDF00626FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 548893402BDF4EDF00626FEF;
+			remoteInfo = Botify;
+		};
+		5488935D2BDF4EE300626FEF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 548893392BDF4EDF00626FEF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 548893402BDF4EDF00626FEF;
+			remoteInfo = Botify;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		548893412BDF4EDF00626FEF /* Botify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Botify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		548893442BDF4EDF00626FEF /* BotifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotifyApp.swift; sourceTree = "<group>"; };
+		548893462BDF4EDF00626FEF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		548893482BDF4EE200626FEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5488934A2BDF4EE200626FEF /* Botify.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Botify.entitlements; sourceTree = "<group>"; };
+		5488934C2BDF4EE200626FEF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		548893522BDF4EE200626FEF /* BotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		548893562BDF4EE300626FEF /* BotifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotifyTests.swift; sourceTree = "<group>"; };
+		5488935C2BDF4EE300626FEF /* BotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		548893602BDF4EE300626FEF /* BotifyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotifyUITests.swift; sourceTree = "<group>"; };
+		548893622BDF4EE300626FEF /* BotifyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BotifyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		548893762BDF579E00626FEF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		5488938B2BDF594200626FEF /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5488933E2BDF4EDF00626FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548893752BDF575900626FEF /* BotifyApi in Frameworks */,
+				548893842BDF58D200626FEF /* Apollo in Frameworks */,
+				548893882BDF58D200626FEF /* ApolloSQLite in Frameworks */,
+				5488938A2BDF58D200626FEF /* ApolloTestSupport in Frameworks */,
+				548893862BDF58D200626FEF /* ApolloAPI in Frameworks */,
+				548893722BDF4F0E00626FEF /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5488934F2BDF4EE200626FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548893592BDF4EE300626FEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		548893382BDF4EDF00626FEF = {
+			isa = PBXGroup;
+			children = (
+				548893432BDF4EDF00626FEF /* Botify */,
+				548893552BDF4EE300626FEF /* BotifyTests */,
+				5488935F2BDF4EE300626FEF /* BotifyUITests */,
+				548893422BDF4EDF00626FEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		548893422BDF4EDF00626FEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				548893412BDF4EDF00626FEF /* Botify.app */,
+				548893522BDF4EE200626FEF /* BotifyTests.xctest */,
+				5488935C2BDF4EE300626FEF /* BotifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		548893432BDF4EDF00626FEF /* Botify */ = {
+			isa = PBXGroup;
+			children = (
+				5488938B2BDF594200626FEF /* SongViewModel.swift */,
+				548893762BDF579E00626FEF /* Network.swift */,
+				548893442BDF4EDF00626FEF /* BotifyApp.swift */,
+				548893462BDF4EDF00626FEF /* ContentView.swift */,
+				548893482BDF4EE200626FEF /* Assets.xcassets */,
+				5488934A2BDF4EE200626FEF /* Botify.entitlements */,
+				5488934B2BDF4EE200626FEF /* Preview Content */,
+			);
+			path = Botify;
+			sourceTree = "<group>";
+		};
+		5488934B2BDF4EE200626FEF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5488934C2BDF4EE200626FEF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		548893552BDF4EE300626FEF /* BotifyTests */ = {
+			isa = PBXGroup;
+			children = (
+				548893562BDF4EE300626FEF /* BotifyTests.swift */,
+			);
+			path = BotifyTests;
+			sourceTree = "<group>";
+		};
+		5488935F2BDF4EE300626FEF /* BotifyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				548893602BDF4EE300626FEF /* BotifyUITests.swift */,
+				548893622BDF4EE300626FEF /* BotifyUITestsLaunchTests.swift */,
+			);
+			path = BotifyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		548893402BDF4EDF00626FEF /* Botify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548893662BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "Botify" */;
+			buildPhases = (
+				5488933D2BDF4EDF00626FEF /* Sources */,
+				5488933E2BDF4EDF00626FEF /* Frameworks */,
+				5488933F2BDF4EDF00626FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Botify;
+			packageProductDependencies = (
+				548893712BDF4F0E00626FEF /* Kingfisher */,
+				548893742BDF575900626FEF /* BotifyApi */,
+				548893832BDF58D200626FEF /* Apollo */,
+				548893852BDF58D200626FEF /* ApolloAPI */,
+				548893872BDF58D200626FEF /* ApolloSQLite */,
+				548893892BDF58D200626FEF /* ApolloTestSupport */,
+			);
+			productName = Botify;
+			productReference = 548893412BDF4EDF00626FEF /* Botify.app */;
+			productType = "com.apple.product-type.application";
+		};
+		548893512BDF4EE200626FEF /* BotifyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 548893692BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "BotifyTests" */;
+			buildPhases = (
+				5488934E2BDF4EE200626FEF /* Sources */,
+				5488934F2BDF4EE200626FEF /* Frameworks */,
+				548893502BDF4EE200626FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				548893542BDF4EE200626FEF /* PBXTargetDependency */,
+			);
+			name = BotifyTests;
+			productName = BotifyTests;
+			productReference = 548893522BDF4EE200626FEF /* BotifyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5488935B2BDF4EE300626FEF /* BotifyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5488936C2BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "BotifyUITests" */;
+			buildPhases = (
+				548893582BDF4EE300626FEF /* Sources */,
+				548893592BDF4EE300626FEF /* Frameworks */,
+				5488935A2BDF4EE300626FEF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5488935E2BDF4EE300626FEF /* PBXTargetDependency */,
+			);
+			name = BotifyUITests;
+			productName = BotifyUITests;
+			productReference = 5488935C2BDF4EE300626FEF /* BotifyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		548893392BDF4EDF00626FEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					548893402BDF4EDF00626FEF = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					548893512BDF4EE200626FEF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 548893402BDF4EDF00626FEF;
+					};
+					5488935B2BDF4EE300626FEF = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 548893402BDF4EDF00626FEF;
+					};
+				};
+			};
+			buildConfigurationList = 5488933C2BDF4EDF00626FEF /* Build configuration list for PBXProject "Botify" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 548893382BDF4EDF00626FEF;
+			packageReferences = (
+				548893702BDF4F0E00626FEF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				548893732BDF575800626FEF /* XCLocalSwiftPackageReference "BotifyApi" */,
+				548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */,
+			);
+			productRefGroup = 548893422BDF4EDF00626FEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				548893402BDF4EDF00626FEF /* Botify */,
+				548893512BDF4EE200626FEF /* BotifyTests */,
+				5488935B2BDF4EE300626FEF /* BotifyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5488933F2BDF4EDF00626FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5488934D2BDF4EE200626FEF /* Preview Assets.xcassets in Resources */,
+				548893492BDF4EE200626FEF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548893502BDF4EE200626FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5488935A2BDF4EE300626FEF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5488933D2BDF4EDF00626FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548893472BDF4EDF00626FEF /* ContentView.swift in Sources */,
+				5488938C2BDF594200626FEF /* SongViewModel.swift in Sources */,
+				548893452BDF4EDF00626FEF /* BotifyApp.swift in Sources */,
+				548893772BDF579E00626FEF /* Network.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5488934E2BDF4EE200626FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548893572BDF4EE300626FEF /* BotifyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		548893582BDF4EE300626FEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				548893612BDF4EE300626FEF /* BotifyUITests.swift in Sources */,
+				548893632BDF4EE300626FEF /* BotifyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		548893542BDF4EE200626FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 548893402BDF4EDF00626FEF /* Botify */;
+			targetProxy = 548893532BDF4EE200626FEF /* PBXContainerItemProxy */;
+		};
+		5488935E2BDF4EE300626FEF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 548893402BDF4EDF00626FEF /* Botify */;
+			targetProxy = 5488935D2BDF4EE300626FEF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		548893642BDF4EE300626FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		548893652BDF4EE300626FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		548893672BDF4EE300626FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Botify/Botify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Botify/Preview Content\"";
+				DEVELOPMENT_TEAM = 3565DKT394;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.Botify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		548893682BDF4EE300626FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Botify/Botify.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Botify/Preview Content\"";
+				DEVELOPMENT_TEAM = 3565DKT394;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.Botify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5488936A2BDF4EE300626FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3565DKT394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.BotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Botify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Botify";
+			};
+			name = Debug;
+		};
+		5488936B2BDF4EE300626FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3565DKT394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.BotifyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Botify.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Botify";
+			};
+			name = Release;
+		};
+		5488936D2BDF4EE300626FEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3565DKT394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.BotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Botify;
+			};
+			name = Debug;
+		};
+		5488936E2BDF4EE300626FEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3565DKT394;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.botify.BotifyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Botify;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5488933C2BDF4EDF00626FEF /* Build configuration list for PBXProject "Botify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548893642BDF4EE300626FEF /* Debug */,
+				548893652BDF4EE300626FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548893662BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "Botify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				548893672BDF4EE300626FEF /* Debug */,
+				548893682BDF4EE300626FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		548893692BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "BotifyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5488936A2BDF4EE300626FEF /* Debug */,
+				5488936B2BDF4EE300626FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5488936C2BDF4EE300626FEF /* Build configuration list for PBXNativeTarget "BotifyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5488936D2BDF4EE300626FEF /* Debug */,
+				5488936E2BDF4EE300626FEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		548893732BDF575800626FEF /* XCLocalSwiftPackageReference "BotifyApi" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = BotifyApi;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		548893702BDF4F0E00626FEF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		548893712BDF4F0E00626FEF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548893702BDF4F0E00626FEF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		548893742BDF575900626FEF /* BotifyApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BotifyApi;
+		};
+		548893832BDF58D200626FEF /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		548893852BDF58D200626FEF /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		548893872BDF58D200626FEF /* ApolloSQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloSQLite;
+		};
+		548893892BDF58D200626FEF /* ApolloTestSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 548893822BDF58D200626FEF /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloTestSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 548893392BDF4EDF00626FEF /* Project object */;
+}

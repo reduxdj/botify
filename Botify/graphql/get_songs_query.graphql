@@ -1,0 +1,11 @@
+query getSongs {
+  getSongs {
+    title
+    artist
+    createdOn
+    lastModified
+    active
+    mediaUrl
+    imageUrl
+  }
+}
